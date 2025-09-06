@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image slide Animataion</title>
+</head>
+<body>
+    
+
+    <div class="container">
+        <img src="1.jpeg">
+        <img src="2.jpeg">
+        <img src="3.jpeg">
+        <img src="4.jpeg">
+        <img src="5.jpeg">
+        <img src="6.jpeg">
+        <img src="7.jpeg">
+        <img src="8.jpeg">
+    </div>
+
+    <style>
+        .container {
+            width: 75%;
+            height: 460px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .container img{
+            width: 10%;
+            height: 100%;
+            object-fit: cover;
+            border: 2px solid black;
+            border-radius: 12px;
+            transition: all ease-in-out 0.5s;
+        }
+        .container img:hover{
+            width: 26%;
+        }
+    </style>
+
+</body>
+</html>
